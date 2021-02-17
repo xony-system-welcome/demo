@@ -1,0 +1,40 @@
+docker --version
+docker-compose --version
+python3 --version
+
+用 Docker 實戰 Django 以及 Postgre - PART 1
+https://www.youtube.com/watch?v=Wg5m0-Jyox8&feature=youtu.be
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+Ubuntu 20.10 https://ubuntu.com/download/desktop/thank-you/?version=20.10&architecture=amd64
+
+Ubuntu(Linux) 如何安裝 docker
+這裡使用 Ubuntu 當作範例,
+Get Docker Engine - Community for Ubuntu
+https://docs.docker.com/engine/install/ubuntu/
+Follow, Install using the repository
+
+VMware Workstation 16 Pro, Set Ubuntu
+  > Create a New Virtual Machine
+  > Welcome to the New Virtual Machine Wizard
+    > Typical (recommended)
+    > Next
+  > Guset Operating System Installation
+    > Installer disc image file (iso): Browse you Ubuntu Iso 'ubuntu-20.10-desktop-amd64'
+    > Next
+  > Name the Virtual Machine
+    > Virtual machine name: 'ubuntu.20.10'
+    > Next
+  > Specify Disk Capacity
+    > Maximun disk size(GB): '40'
+    > Next
+  > Ready to Create Virtual Machine
+    > Next
+
+Docker
+Docker-compose
+Python3
+ 
