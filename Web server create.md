@@ -1,17 +1,15 @@
-docker --version
-docker-compose --version
+docker --version\
+docker-compose --version\
 python3 --version
 
-用 Docker 實戰 Django 以及 Postgre - PART 1
+用 Docker 實戰 Django 以及 Postgre - PART 1\
 https://www.youtube.com/watch?v=Wg5m0-Jyox8&feature=youtu.be
 
-
-
-# Tools #s -------------------------------------------------------------------------------------------------------------------
+#### Tools
 Ubuntu 20.10 https://ubuntu.com/download/desktop/thank-you/?version=20.10&architecture=amd64
 
 
-Create Ubuntu-------------------------------------------------------------------------------------------------------------
+Create Ubuntu\
 VMware Workstation 16 Pro
   > Create a New Virtual Machine
   > Welcome to the New Virtual Machine Wizard
@@ -29,7 +27,7 @@ VMware Workstation 16 Pro
   > Ready to Create Virtual Machine
     > Next
     
-#Ubuntu(Linux) 如何安裝 docker------------------------------------------------------------------------------------------------
+#### Ubuntu(Linux) 如何安裝 docker
     這裡使用 Ubuntu 當作範例,
     Get Docker Engine - Community for Ubuntu
 https://docs.docker.com/engine/install/ubuntu/
@@ -39,14 +37,14 @@ Before you install Docker Engine for the first time on a new host machine, you n
 SET UP THE REPOSITORY
 1.Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 Update Docker
-> $ sudo apt-get update
+ $ sudo apt-get update
 安裝必要的東西
-> $ sudo apt-get install \
->    apt-transport-https \
->    ca-certificates \
->    curl \
->    gnupg-agent \
->    software-properties-common 
+ $ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common 
     
 
 2.Add Docker’s official GPG key:
@@ -56,7 +54,7 @@ Update Docker
 Verify that you now have the key with the fingerprint 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88, by searching for the last 8 characters of the fingerprint.
 
 添加fingerprint
-> $ sudo apt-key fingerprint 0EBFCD88 
+ $ sudo apt-key fingerprint 0EBFCD88 
 
 pub   rsa4096 2017-02-22 [SCEA]
       9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
@@ -68,19 +66,20 @@ sub   rsa4096 2017-02-22 [S]
 Note: The lsb_release -cs sub-command below returns the name of your Ubuntu distribution, such as xenial. Sometimes, in a distribution like Linux Mint, you might need to change $(lsb_release -cs) to your parent Ubuntu distribution. For example, if you are using Linux Mint Tessa, you could use bionic. Docker does not offer any guarantees on untested and unsupported Ubuntu distributions.
 
 加入Ubuntu Docker repository
-> $ sudo add-apt-repository \
->    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
->    $(lsb_release -cs) \
->    stable"
+$ sudo add-apt-repository \
+    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+    $(lsb_release -cs) \
+    stable"
 
 Install Docker Engine
 1.Update the apt package index, and install the latest version of Docker Engine and containerd, or go to the next step to install a specific version:
 
 再一次更新清單
-> $ sudo apt-get update
+$ sudo apt-get update
 執行安裝Docker
-> $ sudo apt-get install docker-ce docker-ce-cli containerd.io
-####Docker
-####Docker-compose
-####Python3
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+#### Docker
+#### Docker-compose
+#### Python3
 
