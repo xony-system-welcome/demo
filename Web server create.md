@@ -5,7 +5,7 @@ python3 --version
 用 Docker 實戰 Django 以及 Postgre - PART 1\
 https://www.youtube.com/watch?v=Wg5m0-Jyox8&feature=youtu.be
 
-#### Tools
+### Tools
 Ubuntu 20.10 https://ubuntu.com/download/desktop/thank-you/?version=20.10&architecture=amd64
 
 ```
@@ -28,14 +28,13 @@ VMware Workstation 16 Pro
     Next
 ```
 
-#### Ubuntu(Linux) 如何安裝 docker
-    這裡使用 Ubuntu 當作範例,
-    Get Docker Engine - Community for Ubuntu
-https://docs.docker.com/engine/install/ubuntu/
+### Ubuntu(Linux), 安裝Docker
+Follow docker官網 https://docs.docker.com/engine/install/ubuntu/
 
-Follow, Install using the repository
+#### Install using the repository
 Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
-SET UP THE REPOSITORY
+##### SET UP THE REPOSITORY
+
 1.Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 Update Docker
 ```
@@ -92,7 +91,6 @@ $ sudo apt-get update
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
-#### Docker
-#### Docker-compose
-#### Python3
-
+### Docker
+### Docker-compose
+### Python3
