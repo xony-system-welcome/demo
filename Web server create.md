@@ -69,9 +69,9 @@ uid           [ unknown] Docker Release (CE deb) <docker@docker.com>
 sub   rsa4096 2017-02-22 [S]
 ```
 
-3.Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. Learn about nightly and test channels.\
+3.Use the following command to set up the stable repository. To add the nightly or test repository, add the word nightly or test (or both) after the word stable in the commands below. Learn about nightly and test channels.
 
-Note: The lsb_release -cs sub-command below returns the name of your Ubuntu distribution, such as xenial. Sometimes, in a distribution like Linux Mint, you might need to change $(lsb_release -cs) to your parent Ubuntu distribution. For example, if you are using Linux Mint Tessa, you could use bionic. Docker does not offer any guarantees on untested and unsupported Ubuntu distributions.\
+>Note: The lsb_release -cs sub-command below returns the name of your Ubuntu distribution, such as xenial. Sometimes, in a distribution like Linux Mint, you might need to change $(lsb_release -cs) to your parent Ubuntu distribution. For example, if you are using Linux Mint Tessa, you could use bionic. Docker does not offer any guarantees on untested and unsupported Ubuntu distributions.
 
 加入Ubuntu Docker repository
 ```
@@ -102,13 +102,16 @@ $ apt-cache madison docker-ce
  docker-ce | 5:20.10.1~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
  docker-ce | 5:20.10.0~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
 ```
-選擇最新的 docker版本,并且安裝.\
-b. Install a specific version using the version string from the second column, for example, 5:20.10.3~3-0~ubuntu-groovy.\ 
+選擇最新的 docker版本,并且安裝.
+
+b. Install a specific version using the version string from the second column, for example, 5:20.10.3~3-0~ubuntu-groovy.
+
 E.G $sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
 ```
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
-安裝完成后，使用以下指令測試是否成功\
+安裝完成后，使用以下指令測試是否成功
+
 3. Verify that Docker Engine is installed correctly by running the hello-world image.
 ```
 $ sudo docker run hello-world
