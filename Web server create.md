@@ -104,11 +104,17 @@ $ apt-cache madison docker-ce
  docker-ce | 5:20.10.0~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
 ```
 選擇最新的 docker版本,并且安裝.
-b. Install a specific version using the version string from the second column, for example, 5:20.10.3~3-0~ubuntu-groovy. \ 
-E.G $sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
+> b. Install a specific version using the version string from the second column, for example, 5:20.10.3~3-0~ubuntu-groovy. \ 
+> E.G $sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
 ```
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
 ```
+安裝完成后，使用以下指令測試是否成功
+3. Verify that Docker Engine is installed correctly by running the hello-world image.
+```
+$ sudo docker run hello-world
+```
+
 ### Docker
 ### Docker-compose
 ### Python3
