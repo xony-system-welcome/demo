@@ -1,3 +1,4 @@
+### Check Ubuntu tool version
 docker --version\
 docker-compose --version\
 python3 --version
@@ -8,8 +9,8 @@ https://www.youtube.com/watch?v=Wg5m0-Jyox8&feature=youtu.be
 ### Tools
 Ubuntu 20.10 https://ubuntu.com/download/desktop/thank-you/?version=20.10&architecture=amd64
 
+### VMware Create Ubuntu
 ```
-Create Ubuntu
 VMware Workstation 16 Pro
   Create a New Virtual Machine
   Welcome to the New Virtual Machine Wizard
@@ -37,6 +38,7 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
 1.Update the apt package index and install packages to allow apt to use a repository over HTTPS:
 Update Docker
+gen'gin
 ```
 $ sudo apt-get update
 ```
@@ -90,7 +92,23 @@ $ sudo apt-get update
 ```
 $ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
-
+2.To install a specific version of Docker Engine, list the available versions in the repo, then select and install:\
+3.
+顯示最近的數個 docker版本
+a. List the versions available in your repo:
+```
+$ apt-cache madison docker-ce
+ docker-ce | 5:20.10.3~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
+ docker-ce | 5:20.10.2~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
+ docker-ce | 5:20.10.1~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
+ docker-ce | 5:20.10.0~3-0~ubuntu-groovy | https://download.docker.com/linux/ubuntu groovy/stable amd64 Packages
+```
+選擇最新的 docker版本,并且安裝.
+b. Install a specific version using the version string from the second column, for example, 5:20.10.3~3-0~ubuntu-groovy. \ 
+E.G $sudo apt-get install docker-ce=5:18.09.1~3-0~ubuntu-xenial docker-ce-cli=5:18.09.1~3-0~ubuntu-xenial containerd.io
+```
+$ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io
+```
 ### Docker
 ### Docker-compose
 ### Python3
