@@ -151,3 +151,8 @@ $ sudo apt install python3-pip
 ```
 
 ## Install Django
+
+## Install Visual Studio Code
+Download\
+###### Install python
+Select Extension > Search Python > Install
