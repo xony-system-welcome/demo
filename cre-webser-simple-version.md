@@ -151,6 +151,48 @@ $ sudo apt install python3-pip
 ```
 
 ## Install Django
+https://blog.csdn.net/B5DIV/article/details/103449204
+
+1. Update system
+```
+$ sudo apt-get -y update
+$ sudo apt-get upgrade
+```
+
+2. Install PIP (For have not install)
+```
+$ sudo apt-get install python3-pip
+```
+
+3. Install Virtual environment
+```
+$ Sudo apt-get install python3-venv
+```
+
+4. Cerate Virtual environment
+Create 目錄
+```
+$ mkdir web
+```
+
+打開FILE
+```
+$ cd web
+```
+
+Create the venv file
+```
+$ python3 –m venv venv
+```
+
+Run activate 脚本 激活file
+```
+$ source venv/bin/activate
+```
+
+#####
+
+
 
 ## Install Visual Studio Code
 Download\
