@@ -1,3 +1,16 @@
+* VMware Create Ubuntu
+* Install Docker in Ubuntu
+  * Install using the repository;使用存儲庫安裝
+  * INSTALL DOCKER ENGINE;安裝DOCKER引擎
+* Install Docker Compose
+* Install Python3
+  * Install Python3-pip
+* Install Django
+* Install Visual Studio Code
+
+
+
+
 ## VMware Create Ubuntu
 ```
 VMware Workstation 16 Pro
@@ -121,7 +134,6 @@ docker-compose version 1.28.2, build 1110ad01
 
 
 
-
 ## Install Python3
 https://docs.python-guide.org/starting/install3/linux/
 
@@ -191,7 +203,6 @@ $ source venv/bin/activate
 ```
 
 #####
-
 
 
 ## Install Visual Studio Code
