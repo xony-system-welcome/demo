@@ -123,6 +123,8 @@ docker-compose version 1.28.2, build 1110ad01
 
 
 ## Install Python3
+https://docs.python-guide.org/starting/install3/linux/
+
 Check Python3 version
 ```
 $ python3 --version
@@ -136,6 +138,8 @@ $ sudo apt-get install python3.8
 ```
 
 ### Install Python3-pip
+https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/
+
 Check python3 pip
 ```
 $ pip3 --version
@@ -145,3 +149,5 @@ Install python3 pip
 ```
 $ sudo apt install python3-pip
 ```
+
+## Install Django
