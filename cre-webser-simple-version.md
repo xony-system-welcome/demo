@@ -123,17 +123,24 @@ docker-compose version 1.28.2, build 1110ad01
 
 
 ## Python3
-### Check Python3 version
+Check Python3 version
 ```
 $ python3 --version
 ```
 
-### Install python
+Install python\
 Update Python3 version and install python
 ```
 $ sudo apt-get update
 $ sudo apt-get install python3.8
 ```
 
-### Install
+Check python3 pip
+```
+$ command -v pip3
+```
+
+Install python3 pip
+```
+sudo apt install python3-pip
 ```
