@@ -132,7 +132,7 @@ $ python3 --version
 Update Python3 version and install python
 ```
 $ sudo apt-get update
-$ sudo apt-get install python3.6
+$ sudo apt-get install python3.8
 ```
 
 ### Install
