@@ -1,3 +1,12 @@
+Docker 虛擬平臺無須OS
+Django Webserver
+Postgre DATAbase
+Python3 
+Python3-pip
+
+
+
+
 ### Check Ubuntu tool version
 docker --version\
 docker-compose --version\
