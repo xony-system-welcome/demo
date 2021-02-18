@@ -99,17 +99,17 @@ U can follow it setup, https://docs.docker.com/compose/install/
 ###Install Compose on Linux systems
 1.Download 執行檔
 ```
-sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+$ sudo curl -L "https://github.com/docker/compose/releases/download/1.28.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 2.賦予檔案執行權
 ```
-sudo chmod +x /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
 ```
 
 如果docker-compose執行失敗,可透過location 直接執行.
 ```
-sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+$ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 
 透過check version 檢查是否安裝成功
