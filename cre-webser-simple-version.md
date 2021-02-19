@@ -202,6 +202,12 @@ Run activate 脚本 激活file
 $ source venv/bin/activate
 ```
 
+Install Django
+```
+pip install django
+```
+
+
 #####
 
 
