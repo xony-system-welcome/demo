@@ -194,7 +194,7 @@ $ cd web
 
 Create the venv file
 ```
-$ python3 –m venv venv
+$ python3 -m venv venv
 ```
 
 Run activate 脚本 激活file
