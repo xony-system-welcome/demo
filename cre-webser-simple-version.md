@@ -178,7 +178,7 @@ $ sudo apt-get install python3-pip
 
 3. Install Virtual environment
 ```
-$ Sudo apt-get install python3-venv
+$ sudo apt-get install python3-venv
 ```
 
 4. Cerate Virtual environment
