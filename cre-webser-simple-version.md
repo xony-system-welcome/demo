@@ -230,12 +230,6 @@ Open the PostgreSQL shell will psql command
 psql
 ```
 
-Set new password for `Postgres` 
-```
-\password postgres
-Enter new password:`dbamdin`
-```
-
 Create a new database:`project_db`
 ```
 CREATE DATABASE project_db;
@@ -266,6 +260,110 @@ Exit SQL shell
 ```
 exit
 ```
+
+###
+Install Diango virtualenv
+```
+sudo pip install virtualenv
+```
+
+Create `project_db`
+```
+mkdir ~/project_db
+```
+
+Go to `project_db`
+```
+cd ~/project_db
+```
+
+Copy python and pip to `pjdataenv`
+```
+virtualenv pjdataenv
+```
+
+激活虛擬環境
+```
+source pjdataenv/bin/activate
+```
+
+它將使我們能夠使用配置的數據庫
+```
+pip install django psycopg2
+```
+
+使用“project_db”創建的目錄，我們可以使用以下命令啟動Django項目：
+```
+django-admin.py startproject project_db .
+```
+
+
+###Configuration of Django database settings
+現在，我們將配置項目以使用創建的數據庫。我們將使用以下命令打開主Django項目設置文件
+```
+nano ~/projectdata/projectdata/settings.py
+```
+
+Change last “DATABASES” part，it part setting is SQLite for database.
+```
+. . .
+DATABASES = {
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   }
+}
+. . .
+```
+
+Change the last “DATABASES” part to it setting.
+```
+. . .
+DATABASES = {
+   'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'project_db',
+        'USER': 'project_db_user',
+        'PASSWORD': 'dbpassword',
+        'HOST': 'localhost',
+        'PORT': '',
+   }
+}
+. . .
+```
+
+Test our project:
+
+現在，我們將使用以下命令，從將數據結構遷移到數據庫中開始測試Django項目：
+```
+cd ~/projectdata
+```
+
+```
+python manage.py makemigrations
+```
+
+```
+python manage.py migrate
+```
+
+然後，鍵入以下命令以創建管理帳戶，同時要求您選擇用戶名，電子郵件地址和密碼：
+```
+python manage.py createsuperuser
+```
+現在，我們將使用以下命令啟動Django項目：
+```
+python manage.py runserver 0.0.0.0:8000
+```
+然後訪問服務器的域名或IP地址，後跟：8000，以找到默認的Django根目錄頁。（您可以使用任何Web瀏覽器執行此操作）。
+```
+http://server_domain_or_IP:8000
+```
+
+
+
+
+
 
 ## Install Visual Studio Code
 Download\
