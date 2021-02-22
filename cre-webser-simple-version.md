@@ -207,8 +207,10 @@ Install Django
 pip install django
 ```
 
-
-#####
+## Configure PostgreSQL With Django Application On Ubuntu
+### Install PostgreSQL
+Update 
+sudo apt-get update
 
 
 ## Install Visual Studio Code
