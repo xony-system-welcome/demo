@@ -261,8 +261,8 @@ Exit SQL shell
 exit
 ```
 
-###
-Install Diango virtualenv
+
+### Install Diango virtualenv
 ```
 sudo pip install virtualenv
 ```
