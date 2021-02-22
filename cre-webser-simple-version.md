@@ -262,29 +262,29 @@ exit
 ```
 
 
-### Install Diango virtualenv
+~### Install Diango virtualenv~
 ```
-sudo pip install virtualenv
-```
-
-Create `project_db`
-```
-mkdir ~/project_db
+~sudo pip install virtualenv~
 ```
 
-Go to `project_db`
+~Create `project_db`~
 ```
-cd ~/project_db
-```
-
-Copy python and pip to `pjdataenv`
-```
-virtualenv pjdataenv
+~mkdir ~/project_db~
 ```
 
-激活虛擬環境
+~Go to `project_db`~
 ```
-source pjdataenv/bin/activate
+~cd ~/project_db~
+```
+
+~Copy python and pip to `pjdataenv`~
+```
+~virtualenv pjdataenv~
+```
+
+~激活虛擬環境~
+```
+~source pjdataenv/bin/activate~
 ```
 
 它將使我們能夠使用配置的數據庫
@@ -301,7 +301,7 @@ django-admin.py startproject project_db .
 ###Configuration of Django database settings
 現在，我們將配置項目以使用創建的數據庫。我們將使用以下命令打開主Django項目設置文件
 ```
-nano ~/projectdata/projectdata/settings.py
+nano ~/project_db/settings.py
 ```
 
 Change last “DATABASES” part，it part setting is SQLite for database.
@@ -336,7 +336,7 @@ Test our project:
 
 現在，我們將使用以下命令，從將數據結構遷移到數據庫中開始測試Django項目：
 ```
-cd ~/projectdata
+cd ~/project_db
 ```
 
 ```
