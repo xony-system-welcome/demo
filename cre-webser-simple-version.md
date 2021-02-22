@@ -248,13 +248,13 @@ CREATE USER project_db_user WITH PASSWORD 'dbpassword';
 
 Set Unicode to `UTF8` and Time to `UTC`
 ```
-ALTER ROLE projectdatauser SET client_encoding TO 'utf8';
-ALTER ROLE projectdatauser SET timezone TO 'UTC';
+ALTER ROLE project_db_user SET client_encoding TO 'utf8';
+ALTER ROLE project_db_user SET timezone TO 'UTC';
 ```
 
 Set database user access rights to 'project_db_user'
 ```
-GRANT ALL PRIVILEGES ON DATABASE projectdata TO project_db_user;
+GRANT ALL PRIVILEGES ON DATABASE project_db TO project_db_user;
 ```
 
 Exit SQL prompt
