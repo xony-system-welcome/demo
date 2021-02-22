@@ -209,6 +209,7 @@ $ pip install django
 
 ## Configure PostgreSQL With Django Application On Ubuntu
 https://www.unixmen.com/configure-postgresql-django-application-ubuntu/
+
 https://www.howtoforge.com/tutorial/how-to-install-django-with-postgresql-and-nginx-on-ubuntu-16-04/
 ### Install PostgreSQL
 Update system software
