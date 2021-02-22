@@ -204,7 +204,7 @@ $ source venv/bin/activate
 
 Install Django
 ```
-pip install django
+$ pip install django
 ```
 
 ## Configure PostgreSQL With Django Application On Ubuntu
@@ -213,16 +213,16 @@ https://www.howtoforge.com/tutorial/how-to-install-django-with-postgresql-and-ng
 ### Install PostgreSQL
 Update system software
 ```
-sudo apt-get update
+$ sudo apt-get update
 ```
 Install PostgreSQL
 ```
-sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
+$ sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
 ```
 
 訪問Postgres
 ```
-su - postgres
+$ sudo su - postgres
 ```
 
 Open the PostgreSQL shell will psql command
