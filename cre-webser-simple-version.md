@@ -299,6 +299,11 @@ django-admin.py startproject project_db .
 
 
 ###Configuration of Django database settings
+Install vim for edit file
+```
+sudo apt install vim
+```
+
 現在，我們將配置項目以使用創建的數據庫。我們將使用以下命令打開主Django項目設置文件
 ```
 nano ~/project_db/settings.py
