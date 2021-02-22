@@ -208,12 +208,68 @@ pip install django
 ```
 
 ## Configure PostgreSQL With Django Application On Ubuntu
+https://www.unixmen.com/configure-postgresql-django-application-ubuntu/
+https://www.howtoforge.com/tutorial/how-to-install-django-with-postgresql-and-nginx-on-ubuntu-16-04/
 ### Install PostgreSQL
-Update 
+Update system software
+```
 sudo apt-get update
+```
+Install PostgreSQL
+```
+sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib
+```
 
+訪問Postgres
+```
+su - postgres
+```
+
+Open the PostgreSQL shell will psql command
+```
+psql
+```
+
+Set new password for `Postgres` 
+```
+\password postgres
+Enter new password:`dbamdin`
+```
+
+Create a new database:`project_db`
+```
+CREATE DATABASE project_db;
+```
+
+Create a user:`project_db_user` and password:`dbpassword`
+```
+CREATE USER project_db_user WITH PASSWORD ‘dbpassword’;
+```
+
+Set Unicode to `UTF8` and Time to `UTC`
+```
+ALTER ROLE projectdatauser SET client_encoding TO ‘utf8’;
+ALTER ROLE projectdatauser SET timezone TO ‘UTC’;
+```
+
+Set database user access rights to `project_db_user`
+```
+GRANT ALL PRIVILEGES ON DATABASE projectdata TO project_db_user;
+```
+
+Exit SQL prompt
+```
+\q
+```
+
+Exit SQL shell
+```
+exit
+```
 
 ## Install Visual Studio Code
 Download\
 Install python
 ###### Select Extension > Search Python > Install
+```
+```
