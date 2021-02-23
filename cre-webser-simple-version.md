@@ -163,6 +163,85 @@ Install python3 pip
 $ sudo apt install python3-pip
 ```
 
+### Install Python3-virtualenv
+```
+$ sudo apt install python3-virtualenv
+```
+
+
+sudo apt install python3-virtualenv
+
+## Before you start setting up uWSGI
+https://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
+### virtualenv
+Make sure you are in a virtualenv for the software we need to install (we will describe how to install a system-wide uwsgi later):
+```
+virtualenv uwsgi-tutorial
+cd uwsgi-tutorial
+source bin/activate
+```
+
+### Django
+Install Django into your virtualenv, create a new project, and cd into the project:
+```
+pip install Django
+django-admin.py startproject mysite
+cd mysite
+```
+
+## Basic uWSGI installation and configuration
+### Basic test
+Create a file called test.py:
+```
+# test.py
+def application(env, start_response):
+    start_response('200 OK', [('Content-Type','text/html')])
+    return [b"Hello World"] # python3
+    #return ["Hello World"] # python2
+```
+Run uWSGI:
+```
+uwsgi --http :8000 --wsgi-file test.py
+```
+The options mean:
+
+http :8000: use protocol http, port 8000
+wsgi-file test.py: load the specified file, test.py
+This should serve a ‘hello world’ message directly to the browser on port 8000. Visit:
+```
+http://example.com:8000
+
+```
+
+### Test your Django project
+Now we want uWSGI to do the same thing, but to run a Django site instead of the test.py module.
+
+If you haven’t already done so, make sure that your mysite project actually works:
+```
+python manage.py runserver 0.0.0.0:8000
+```
+And if that works, run it using uWSGI:
+```
+uwsgi --http :8000 --module mysite.wsgi
+```
+
+module mysite.wsgi: load the specified wsgi module
+
+## Basic nginx
+### Install nginx
+```
+sudo apt-get install nginx
+sudo /etc/init.d/nginx start    # start nginx
+```
+And now check that nginx is serving by visiting it in a web browser on port 80 - you should get a message from nginx: “Welcome to nginx!”. That means these components of the full stack are working together:
+
+
+
+
+
+
+
+
 ## Install Django
 https://blog.csdn.net/B5DIV/article/details/103449204
 
