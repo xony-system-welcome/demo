@@ -12,7 +12,6 @@
 
 
 ## VMware Create Ubuntu
-https://docs.docker.com/engine/install/ubuntu/
 ```
 VMware Workstation 16 Pro
   Create a New Virtual Machine
@@ -37,6 +36,7 @@ VMware Workstation 16 Pro
 
 
 ##  Install Docker in Ubuntu
+https://docs.docker.com/engine/install/ubuntu/
 ### Install using the repository;使用存儲庫安裝
 SET UP THE REPOSITORY;設置存儲庫
 
