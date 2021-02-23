@@ -8,6 +8,15 @@
 * Install Django
 * Install Visual Studio Code
 
+###### - Install Pyhon3
+###### - Install Pyhon3-pip
+###### - Install Pyhon3-vim
+###### - Install Pyhon3-virtualenv
+###### - Install PostgreSQL
+###### - Install uWsgi
+###### - Install Django
+###### - Install Nginx
+
 
 
 
