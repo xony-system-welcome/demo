@@ -60,7 +60,3 @@ sudo apt install python3-pip
 sudo apt install python3-virtualenv
 ```
 
-### Install Python3-vim
-```
-sudo apt install python3-vim
-```
