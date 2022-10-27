@@ -5,6 +5,11 @@ http://ftp.ksu.edu.tw/pub/CentOS/7.9.2009/isos/x86_64/CentOS-7-x86_64-DVD-2009.i
 Wazhu 4.3.ova
 https://packages.wazuh.com/4.x/vm/wazuh-4.3.9.ova
 
+
+Set Done
+[root@localhost .ssh]# git config --global user.email "hwt384856713@gmail.com"
+[root@localhost .ssh]# git config --global user.email "demo"
+
 ----------------------------------------------
 Centos Login
 root
