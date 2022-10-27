@@ -56,10 +56,31 @@ Check sshd Status
 ```
 
 ----------------------------------------------
-### CentOS Docker 安装
+## CentOS Docker 安装
 使用官方安装脚本自动安装
 ```
 #curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
 ```
+
+###安装 Docker Engine-Community
+###使用 Docker 倉庫進度設置
+在新主機上首次安裝 Docker Engine-Community 之前，需要設置 Docker 倉庫。之後，您可以從倉庫安裝和更新 Docker。
+
+設置倉庫
+安裝所需的軟件包。 yum-utils 提供了 yum-config-manager ，並且 device mapper 存儲驅動程序需要 device-mapper-persistent-data 和 lvm2。
+```
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+```
+
+使用以下命令來設置穩定的倉庫。
+```
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+```
+
+
 ----------------------------------------------
 ----------------------------------------------
