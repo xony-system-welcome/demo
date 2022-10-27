@@ -1,4 +1,4 @@
-### DOnwload Image
+### Donwload Image
 Centos 7.9-2207.iso
 http://ftp.ksu.edu.tw/pub/CentOS/7.9.2009/isos/x86_64/CentOS-7-x86_64-DVD-2009.iso
 
