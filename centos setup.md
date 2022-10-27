@@ -87,5 +87,28 @@ sudo yum-config-manager \
 sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
 
+要安裝特定版本的 Docker Engine-Community，請在存儲庫中列出可用版本，然後選擇並安裝：
+
+1、列出並排序您存儲庫中可用的版本。此示例按版本號（從高到低）對結果進行排序。
+```
+yum list docker-ce --showduplicates | sort -r
+```
+
+2、通過其完整的軟件包名稱安裝特定版本，該軟件包名稱是軟件包名稱（docker-ce）加上版本字符串（第二列），從第一個冒號（:）一直到第一個連字符，並用連字符（-）分隔。例如：docker-ce-18.09.1。
+```
+# sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
+```
+
+啟動 Docker。
+```
+# sudo systemctl start docker
+```
+
+通過運行 hello-world 鏡像來驗證是否正確安裝了 Docker Engine-Community 。
+```
+# sudo docker run hello-world
+```
+
+
 ----------------------------------------------
 ----------------------------------------------
