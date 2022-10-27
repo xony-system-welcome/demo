@@ -81,6 +81,11 @@ sudo yum-config-manager \
     https://download.docker.com/linux/centos/docker-ce.repo
 ```
 
+安裝 Docker Engine-Community
+安裝最新版本的 Docker Engine-Community 和 containerd，或者轉到下一步安裝特定版本：
+```
+sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
 
 ----------------------------------------------
 ----------------------------------------------
