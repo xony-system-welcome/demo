@@ -42,5 +42,9 @@ Wazhu 4.3.ova
 https://packages.wazuh.com/4.x/vm/wazuh-4.3.9.ova
 
 ----------------------------------------------
+CentOS Docker 安装
+使用官方安装脚本自动安装
+#curl -fsSL https://get.docker.com | bash -s docker --mirror Aliyun
+
 ----------------------------------------------
 ----------------------------------------------
